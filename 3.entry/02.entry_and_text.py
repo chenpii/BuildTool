@@ -7,8 +7,8 @@ window.title("测试小工具")
 # 窗口大小
 window.geometry('200x200')
 
-entry = tk.Entry(window, show=None)
-entry.pack()
+entry = tk.Entry(window, show=None).pack()
+entry
 
 
 # 按钮触发函数

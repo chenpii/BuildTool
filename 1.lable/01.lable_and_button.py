@@ -9,8 +9,8 @@ window.geometry('500x400')
 
 var = tk.StringVar()
 # 标签对象
-lable1 = tk.Label(window, textvariable=var, bg='green', font=('Arial,12'), width=15, height=2)
-lable1.pack()
+# Label（标签）控件，是 Tkinter 中最常使用的一种控件，主要用来显示窗口中的文本或者图像
+lable1 = tk.Label(window, textvariable=var, bg='green', font=('Arial,12'), width=15, height=2).pack()
 
 on_hit = False
 
@@ -27,7 +27,6 @@ def hit_me():
 
 
 # 按钮对象
-button1 = tk.Button(window, text='hit me', width=15, height=2, command=hit_me)
-button1.pack()
+button1 = tk.Button(window, text='hit me', width=15, height=2, command=hit_me).pack()
 
 window.mainloop()
